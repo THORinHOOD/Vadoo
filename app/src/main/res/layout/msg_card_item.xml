@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/tools"
+              android:padding="5dp"
+              android:id="@+id/container_msg_main"
+>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview_msg"
+            app:cardBackgroundColor="@color/vk_white"
+
+            >
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/container_msg"
+            >
+
+         <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="NONE"
+                 android:id="@+id/name_msg" android:textSize="15dp" android:textColor="@color/vk_black"
+                 android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NONE"
+            android:id="@+id/text_msg" android:textColor="@color/vk_black" android:textSize="15dp"
+            android:layout_below="@+id/name_msg"/>
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
